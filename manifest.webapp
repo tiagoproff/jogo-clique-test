@@ -1,0 +1,13 @@
+{
+  "name": "Jogo de Cliques",
+  "description": "Um jogo simples de clique",
+  "version": "1.0",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Tiago Sacramento",
+    "url": "https://tiagosacramento.dev"
+  },
+  "icons": {
+    "128": "./icon.png"
+  }
+}
