@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
 });
 
 function formatScore(score) {
-  return score.toString().padStart(3, "0");
+  return padStartPolyfill(score, 3, "0");
 }
 
 function animeScore() {
@@ -38,3 +38,8 @@ function animeScore() {
     button.removeAttribute("disabled");
   }, SCORE_ANIMATION_DURATION * 1000);
 }
+
+function padStartPolyfill(s, l, p) {
+    return (Array(l).join(p || ' ') + s).slice(-l);
+}
+
